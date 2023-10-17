@@ -1,0 +1,27 @@
+sort1 uses: bubble sort
+
+How do you know?: The time difference between sorting random and sorted is very big, which hints at bubble sort.
+If the list is already sorted, bubble sort goes over the list once and then sees that it did nothing and therefore no more works is to be done.
+
+sort2 uses: merge sort
+
+How do you know?: This algorithm sorts the random list by far the quickest, which suggests it being the only algorithm in this test with a time complexity of O(nlog n), compared to O(n²).
+
+sort3 uses: selection sort
+
+How do you know?: The time required to sort random, reversed and sorted is almost the same.
+This behaviour hints at selection sort, since this algorithm has to check every value against every other value to see if it is in the right place.
+Therefore it doesn't matter if the list is already sorted or not.
+
+
+sort1 - random50000:    8,244s
+sort1 - reversed50000:  5,874s
+sort1 - sorted50000:    0,815s
+
+sort2 - random50000:    0,982s
+sort2 - reversed50000:  0,795s
+sort2 - sorted50000:    0,867s
+
+sort3 - random50000:    3,879s
+sort3 - reversed50000:  3,929s
+sort3 - sorted50000:    3,697s
